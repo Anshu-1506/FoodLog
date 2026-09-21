@@ -5,7 +5,7 @@ const AISuggestionCard = ({
   suggestion
 }) => {
   const navigate = useNavigate();
-  return <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
+  return <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_28px_rgba(0,0,0,0.12)] transition-shadow">
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 bg-brand-500 rounded-full" />
@@ -16,9 +16,9 @@ const AISuggestionCard = ({
 
       <div className="flex items-start gap-3">
         <img src={botImage} alt="FoodLog AI" className="w-12 h-12 shrink-0" />
-        <p className="text-sm text-gray-600 leading-relaxed">
-          {suggestion || 'Log a meal to get your first personalized suggestion.'}
-        </p>
+        <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
+       {suggestion || 'Log a meal to get your first personalized suggestion.'}
+      </p>
       </div>
 
       <button onClick={() => navigate('/suggestions')} className="flex items-center gap-1 text-sm font-medium text-brand-600 mt-4 hover:underline">

@@ -4,7 +4,7 @@ const WaterTracker = ({
   goal,
   onAdd
 }) => {
-  return <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
+  return <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_28px_rgba(0,0,0,0.12)] transition-shadow">
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-semibold text-gray-900">Water Intake</h3>
         <span className="text-sm text-gray-500">{glasses} / {goal} Glasses</span>

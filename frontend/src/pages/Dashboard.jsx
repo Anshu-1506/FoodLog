@@ -96,7 +96,7 @@ const Dashboard = () => {
     goals,
     meals
   } = summary;
-  return <div className="flex flex-col md:flex-row min-h-screen bg-gray-50">
+  return <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       <Sidebar />
 
       <main className="flex-1 p-4 sm:p-6 md:p-8 w-full max-w-full overflow-x-hidden">
