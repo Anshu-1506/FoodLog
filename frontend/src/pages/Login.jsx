@@ -100,7 +100,7 @@ const Login = () => {
             } catch (err) {
               setError('Google sign-in failed. Please try again.');
             }
-          }} onError={() => setError('Google sign-in failed. Please try again.')} width="100%" />
+          }} onError={() => setError('Google sign-in failed. Please try again.')} width="320" />
 </div>
 
           <p className="text-center text-sm text-gray-500 mt-6">
