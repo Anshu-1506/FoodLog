@@ -4,6 +4,9 @@ FoodLog is a full-stack nutrition tracking application built for Indian users, l
 
 > "Log your food. Understand your nutrition."
 
+🔗 **Live Demo:** https://food-log-rose.vercel.app/
+*(Click "Get Started for Free" on the landing page to try the AI meal analysis instantly — no signup required.)*
+
 ---
 
 ## ✨ Features
@@ -85,7 +88,7 @@ sequenceDiagram
 - MongoDB Atlas (cloud)
 
 **Deployment**
-- Frontend → Vercel
+- Frontend → [Vercel](https://food-log-rose.vercel.app/)
 - Backend → Render
 
 ---
