@@ -11,12 +11,15 @@ const TodayMeals = ({
 }) => {
   const types = ['breakfast', 'lunch', 'snack', 'dinner'];
   return <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_28px_rgba(0,0,0,0.12)] transition-shadow">
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="font-semibold text-gray-900">Today's Meals</h3>
-        <Link to="/add-meal" className="flex items-center gap-1 text-sm font-medium text-brand-600 border border-brand-200 rounded-lg px-3 py-1.5 hover:bg-brand-50">
-          <Plus size={14} /> Add Meal
-        </Link>
-      </div>
+      <div className="flex items-center justify-between mb-4 gap-2">
+  <h3 className="font-semibold text-gray-900 shrink-0">Today's Meals</h3>
+  <Link
+    to="/add-meal"
+    className="flex items-center gap-1 text-sm font-medium text-brand-600 border border-brand-200 rounded-lg px-3 py-1.5 hover:bg-brand-50 whitespace-nowrap shrink-0"
+  >
+    <Plus size={14} /> Add Meal
+  </Link>
+</div>
 
       <div className="divide-y divide-gray-100">
         {types.map(type => {

@@ -29,18 +29,32 @@ const MealInput = ({
 
       <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Breakfast mein 2 aloo parathe, mixed sabji aur 1 cup chai khayi" rows={3} className="w-full border border-gray-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
 
-      <div className="flex items-center justify-between mt-4">
-        <div className="flex gap-2">
-          {mealTypes.map(type => <button key={type} onClick={() => setMealType(type)} className={`px-3 py-1.5 text-sm rounded-lg capitalize border transition ${mealType === type ? 'bg-brand-600 text-white border-brand-600' : 'border-gray-200 text-gray-500 hover:border-brand-300'}`}>
-              {type}
-            </button>)}
-        </div>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4">
+  <div className="flex gap-2 overflow-x-auto pb-1 sm:pb-0">
+    {mealTypes.map((type) => (
+      <button
+        key={type}
+        onClick={() => setMealType(type)}
+        className={`px-3 py-1.5 text-sm rounded-lg capitalize border transition whitespace-nowrap shrink-0 ${
+          mealType === type
+            ? 'bg-brand-600 text-white border-brand-600'
+            : 'border-gray-200 text-gray-500 hover:border-brand-300'
+        }`}
+      >
+        {type}
+      </button>
+    ))}
+  </div>
 
-        <button onClick={handleSubmit} disabled={loading} className="flex items-center gap-2 px-5 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-lg hover:bg-brand-700 transition disabled:opacity-60">
-          <Sparkles size={16} />
-          {loading ? 'Analyzing...' : 'Analyze Meal'}
-        </button>
-      </div>
+  <button
+    onClick={handleSubmit}
+    disabled={loading}
+    className="flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-lg hover:bg-brand-700 transition disabled:opacity-60 whitespace-nowrap w-full sm:w-auto"
+  >
+    <Sparkles size={16} />
+    {loading ? 'Analyzing...' : 'Analyze Meal'}
+  </button>
+</div>
     </div>;
 };
 export default MealInput;
