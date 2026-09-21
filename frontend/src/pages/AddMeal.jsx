@@ -6,7 +6,7 @@ import MealInput from '../components/meals/MealInput';
 import MealPreviewCard from '../components/meals/MealPreviewCard';
 import WhatIfSimulator from '../components/meals/WhatIfSimulator';
 import axiosInstance from '../api/axiosInstance';
-import { localParseInput } from '../utils/localParser';
+
 const AddMeal = () => {
   const navigate = useNavigate();
   const [analyzing, setAnalyzing] = useState(false);
