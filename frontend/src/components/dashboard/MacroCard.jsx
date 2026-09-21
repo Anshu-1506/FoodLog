@@ -31,7 +31,7 @@ const MacroCard = ({
   const c = colorMap[color];
   const remaining = Math.max(goal - value, 0);
   const pct = Math.min(value / goal * 100, 100);
-  return <div className="bg-white border border-gray-100 rounded-xl p-5">
+  return <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
       <div className="flex items-center gap-2 mb-3">
         <div className={`w-8 h-8 rounded-full flex items-center justify-center ${c.bg}`}>
           <Icon size={16} className={c.text} />

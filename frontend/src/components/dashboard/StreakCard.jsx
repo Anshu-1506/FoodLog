@@ -2,7 +2,7 @@ import { Flame } from 'lucide-react';
 const StreakCard = ({
   streak
 }) => {
-  return <div className="bg-white border border-gray-100 rounded-xl p-5 flex items-center justify-between">
+  return <div className="bg-white border border-gray-100 rounded-xl p-5 flex items-center justify-between shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
       <div className="flex items-center gap-2">
         <Flame size={18} className="text-orange-500" />
         <h3 className="font-semibold text-gray-900">Streak</h3>

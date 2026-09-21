@@ -16,7 +16,7 @@ const NutrientDonut = ({
     name: 'Fat',
     value: fat
   }];
-  return <div className="bg-white border border-gray-100 rounded-xl p-5">
+  return <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
       <h3 className="font-semibold text-gray-900 mb-4">Nutrient Distribution</h3>
       <div className="flex items-center gap-6">
         <PieChart width={110} height={110}>

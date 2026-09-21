@@ -10,7 +10,7 @@ const TodayMeals = ({
   meals
 }) => {
   const types = ['breakfast', 'lunch', 'snack', 'dinner'];
-  return <div className="bg-white border border-gray-100 rounded-xl p-5">
+  return <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold text-gray-900">Today's Meals</h3>
         <Link to="/add-meal" className="flex items-center gap-1 text-sm font-medium text-brand-600 border border-brand-200 rounded-lg px-3 py-1.5 hover:bg-brand-50">

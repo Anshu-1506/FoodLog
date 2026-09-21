@@ -5,7 +5,7 @@ const AISuggestionCard = ({
   suggestion
 }) => {
   const navigate = useNavigate();
-  return <div className="bg-white border border-gray-100 rounded-xl p-5">
+  return <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-md shadow-gray-200/50 hover:shadow-lg hover:shadow-gray-200/60 transition-shadow">
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 bg-brand-500 rounded-full" />
