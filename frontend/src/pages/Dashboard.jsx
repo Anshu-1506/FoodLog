@@ -109,7 +109,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6">
+       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6 md:auto-rows-fr">
           <MacroCard icon={Flame} label="Calories" value={totals.calories} goal={goals.calories} unit=" kcal" color="orange" />
           <MacroCard icon={Leaf} label="Protein" value={totals.protein} goal={goals.protein} unit="g" color="green" />
           <MacroCard icon={Wheat} label="Carbs" value={totals.carbs} goal={goals.carbs} unit="g" color="blue" />
