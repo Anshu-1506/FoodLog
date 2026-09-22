@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { User, Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../context/AuthContext';
 import authPanel from '../assets/images/auth-panel.png';
 const Signup = () => {
@@ -112,7 +113,7 @@ const Signup = () => {
             } catch (err) {
               setError('Google sign-in failed. Please try again.');
             }
-          }} onError={() => setError('Google sign-in failed. Please try again.')} width="100%" />
+          }} onError={() => setError('Google sign-in failed. Please try again.')} width="320" />
 </div>
 
           <p className="text-center text-sm text-gray-500 mt-6">
