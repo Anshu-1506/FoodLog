@@ -15,16 +15,15 @@ const AboutUs = () => <div className="min-h-screen bg-white">
           through a food database yourself.
         </p>
         <p>
-          Under the hood, FoodLog keeps AI and math separate on purpose: Google Gemini handles
-          understanding your sentence, while a structured, deterministic nutrition engine handles the
-          actual calorie and macro calculations — so the numbers stay consistent and trustworthy every
-          time.
-        </p>
-        <p>
-          This project was built as a full-stack final-year application, combining a React/Vite
-          frontend, a Node/Express backend, MongoDB for storage, and Gemini for natural language
-          understanding.
-        </p>
+  Under the hood, FoodLog uses OpenRouter's AI models to understand natural language and estimate
+  nutrition based on real recipe knowledge — grounded with reference data for common Indian dishes
+  so the numbers stay realistic and consistent rather than arbitrary.
+</p>
+<p>
+  This project was built as a full-stack final-year application, combining a React/Vite
+  frontend, a Node/Express backend, MongoDB for storage, and OpenRouter for natural language
+  understanding and nutrition estimation.
+</p>
       </div>
     </div>
   </div>;

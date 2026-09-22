@@ -5,11 +5,10 @@ const steps = [{
   icon: MessageSquare,
   title: 'Describe your meal',
   desc: 'Type naturally in English, Hindi, or Hinglish — "Lunch mein 4 roti, dal, rice aur salad khaya".'
-}, {
-  icon: Cpu,
-  title: 'AI + database calculate nutrition',
-  desc: 'Gemini identifies the food items and quantities. A structured food database then deterministically calculates calories, protein, carbs and fat — so results stay accurate and consistent.'
-}, {
+}, { icon: Cpu,
+   title: 'AI analyzes your meal',
+   desc: 'OpenRouter AI identifies the food items and quantities, then estimates calories, protein, carbs and fat based on typical Indian recipe preparations and serving sizes.'
+ }, {
   icon: BarChart3,
   title: 'See your dashboard update',
   desc: 'Your remaining calorie and macro budget, weekly charts, and AI suggestions update instantly based on what you just logged.'

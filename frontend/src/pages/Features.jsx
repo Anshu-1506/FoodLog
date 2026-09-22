@@ -4,11 +4,10 @@ const features = [{
   icon: Utensils,
   title: 'Natural Language Logging',
   desc: 'Type your meal the way you\'d say it out loud — "2 aloo parathe aur chai" — no manual food search needed.'
-}, {
-  icon: Sparkles,
-  title: 'AI-Powered Parsing',
-  desc: 'Gemini identifies food items and quantities from your text, while a structured food database handles the actual nutrition math.'
-}, {
+}, { icon: Sparkles,
+   title: 'AI-Powered Parsing',
+    desc: 'OpenRouter AI identifies food items and quantities from your text, then estimates nutrition based on real cooking methods and portion sizes.'
+   }, {
   icon: Target,
   title: 'Remaining Nutrition Budget',
   desc: 'See exactly how many calories, protein, carbs and fat you have left for the day — updated the moment you log a meal.'

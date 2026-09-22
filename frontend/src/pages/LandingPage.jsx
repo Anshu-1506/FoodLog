@@ -35,19 +35,19 @@ const LandingPage = () => {
           </div>
 
           <div className="flex flex-wrap gap-6 sm:gap-8 mt-8 pt-6 border-t border-gray-100">
-            <div>
-              <p className="text-lg sm:text-xl font-bold text-gray-900">10,000+</p>
-              <p className="text-xs sm:text-sm text-gray-400">Happy Users</p>
-            </div>
-            <div>
-              <p className="text-lg sm:text-xl font-bold text-gray-900">4.8/5</p>
-              <p className="text-xs sm:text-sm text-gray-400">User Rating</p>
-            </div>
-            <div>
-              <p className="text-lg sm:text-xl font-bold text-gray-900">100%</p>
-              <p className="text-xs sm:text-sm text-gray-400">Data Privacy</p>
-            </div>
-          </div>
+  <div>
+    <p className="text-lg sm:text-xl font-bold text-gray-900">100%</p>
+    <p className="text-xs sm:text-sm text-gray-400">Free to Use</p>
+  </div>
+  <div>
+    <p className="text-lg sm:text-xl font-bold text-gray-900">AI-Powered</p>
+    <p className="text-xs sm:text-sm text-gray-400">Nutrition Estimates</p>
+  </div>
+  <div>
+    <p className="text-lg sm:text-xl font-bold text-gray-900">Hinglish</p>
+    <p className="text-xs sm:text-sm text-gray-400">Supported</p>
+  </div>
+</div>
         </div>
 
         <img src={heroTop} alt="FoodLog app preview" className="w-full" />
